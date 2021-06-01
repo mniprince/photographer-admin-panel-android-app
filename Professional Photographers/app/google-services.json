@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "264915579882",
+    "project_id": "professional-photographe-dcb90",
+    "storage_bucket": "professional-photographe-dcb90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264915579882:android:df6395da04d986ad38b893",
+        "android_client_info": {
+          "package_name": "com.jovialway.professionalphotographers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264915579882-f751h8pmkhfn3uppautoqau2mbsmn3el.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPNRcHXc4o9hbsnPI8yPIAA8cctvKOEOU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264915579882-f751h8pmkhfn3uppautoqau2mbsmn3el.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

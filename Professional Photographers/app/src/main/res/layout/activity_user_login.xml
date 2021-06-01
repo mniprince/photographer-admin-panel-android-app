@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".auth.UserLogin">
+<ImageView
+    android:id="@+id/imgup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="-70dp"
+    android:layout_marginBottom="-80dp"
+    android:src="@drawable/up"/>
+    <ImageView
+        android:layout_below="@+id/imgup"
+        android:id="@+id/logo"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginTop="-45dp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/rtv"
+        android:layout_below="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/teal_200"
+        android:text="User Log In"/>
+<LinearLayout
+    android:layout_below="@+id/rtv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_24sdp"
+    android:layout_alignParentStart="true"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:padding="5dp">
+
+    <EditText
+        android:id="@+id/emailet"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Enter your mail"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@android:color/black" />
+
+    <EditText
+        android:id="@+id/pwet"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Enter password"
+        android:maxLength="10"
+        android:inputType="textPassword"
+        android:textColorHint="@android:color/black" />
+
+</LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#2196F3"
+            android:layout_above="@+id/fpw"
+            android:text="Log In"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/fpw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:textColor="@color/teal_700"
+        android:layout_above="@+id/cuser"
+        android:text="Forgot Password? Reset Here"/>
+        <TextView
+            android:id="@+id/cuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:textColor="@color/botom"
+            android:text="New User? Registrar Here"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/mushaf3"
+tools:context=".views.CatActivity">
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/hometoolbar"
+        android:layout_width="match_parent"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        />
+</com.google.android.material.appbar.AppBarLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:background="@color/mushaf3"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:padding="@dimen/_15sdp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:hint="Contact Person(Name)"
+            android:inputType="text"
+            android:textColorHint="@android:color/black" />
+        <EditText
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:hint="Contact Number"
+            android:inputType="number"
+            android:textColorHint="@android:color/black" />
+        <EditText
+            android:id="@+id/etype"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Event type"
+            android:inputType="text"
+            android:textColorHint="@android:color/black" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="DD/MM/YYYY"
+            android:inputType="date"
+            android:focusable="false"/>
+
+        <EditText
+            android:id="@+id/elocation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Event Location"
+            android:inputType="text"
+            android:textColorHint="@android:color/black" />
+
+        <EditText
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:hint="Message (Optional)"
+            android:maxLength="250"
+            android:inputType="text"
+            android:textColorHint="@android:color/black" />
+        <Button
+            android:id="@+id/hirebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_150sdp"
+            android:backgroundTint="@color/botom"
+            android:layout_gravity="center_horizontal"
+            android:text="Send"/>
+    </LinearLayout>
+</ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Professional Photographers</string>
+    <string name="see_all">See All</string>
+    <string name="cat_all">All Categories</string>
+    <string name="findpg">Find A PhotoGrapher</string>
+    <string name="sphotos">Stock Photos</string>
+    <string name="payment">Enrol Now</string>
+    <string name="paydetails">Monthly or Yearly Subscription!</string>
+    <string name="allcategory">All Categories</string>
+    <string name="allphotos">All Photos</string>
+    <string name="dboard">User Dashboard</string>
+    <string name="hp">Hire PhotoGrapher</string>
+</resources>

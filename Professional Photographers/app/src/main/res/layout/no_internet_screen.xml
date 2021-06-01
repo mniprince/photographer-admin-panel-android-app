@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:background="#DEE7E9">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:textSize="25sp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:textColor="@color/red"
+        android:text="Oops! No Internet"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+       android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/internetsearch"
+        app:lottie_autoPlay="true"
+        android:padding="@dimen/_5sdp"
+        app:lottie_loop="true"/>
+
+
+</RelativeLayout>

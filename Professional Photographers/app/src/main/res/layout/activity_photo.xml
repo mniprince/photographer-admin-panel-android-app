@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/white"
+tools:context=".photos.PhotoActivity">
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/hometoolbar"
+        android:layout_width="match_parent"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        />
+</com.google.android.material.appbar.AppBarLayout>
+
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/photorv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@color/teal_200"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_2sdp"
+    android:paddingStart="@dimen/_2sdp"
+    android:paddingEnd="@dimen/_2sdp"
+    android:gravity="clip_horizontal"
+    tools:ignore="MissingConstraints" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
